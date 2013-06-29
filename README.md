@@ -20,21 +20,25 @@ To execute a cURL action use the function `exec`, this function just executes th
 
 ### Example 1
 
-    // Print the contents of the response
-    $ch = new CURL('http://www.w3schools.com/html/tryhtml_nestedlists2.htm');
-    
-    $ch->setReturn(false);
-    
-    $ch->exec();
+```PHP
+// Print the contents of the response
+$ch = new CURL('http://www.w3schools.com/html/tryhtml_nestedlists2.htm');
+
+$ch->setReturn(false);
+
+$ch->exec();
+```
 
 ### Example 2
 
-    // Save the content of the response in a variable
-    $ch = new CURL('http://www.w3schools.com/html/tryhtml_nestedlists2.html');
+```PHP
+// Save the content of the response in a variable
+$ch = new CURL('http://www.w3schools.com/html/tryhtml_nestedlists2.html');
 
-    $ch->exec();
+$ch->exec();
 
-    $result = $ch->getResponse();
+$result = $ch->getResponse();
+```
 
 Notes
 -----
